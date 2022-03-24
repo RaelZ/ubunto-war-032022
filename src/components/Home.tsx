@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { conectAPI } from "../api/ConectAPI";
-import moment from "moment";
 
 export default function Home() {
   const [url, setURL] = useState<any>("");

@@ -1,5 +1,5 @@
 import React from "react";
-import { Grid, Typography } from "@mui/material";
+import { Box, Grid, Typography } from "@mui/material";
 import { useNavigate } from "react-router-dom";
 
 const Header: React.FC = () => {
@@ -10,12 +10,14 @@ const Header: React.FC = () => {
       onClick={() => navigate("/")}
       alignItems="center"
       display="flex"
-      justifyContent="center"
+      justifyContent="left"
       minHeight={70}
       bgcolor="red"
-      style={{ cursor: 'pointer', backgroundImage: 'linear-gradient(360deg, white, red)' }}
+      style={{ cursor: 'pointer', paddingLeft: '2em',backgroundImage: 'linear-gradient(360deg, white, red)' }}
     >
-      <Typography>METAVERSO</Typography>
+      <Box>
+        <Typography sx={{ fontSize:'24px', weight: '700' }}>METAVERSO</Typography>
+      </Box>
     </Grid>
   );
 };

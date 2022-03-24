@@ -10,10 +10,10 @@ const HomePage: React.FC = () => {
         height="100%"
         display="flex"
         alignItems="center"
-        justifyContent="center"
+        justifyContent="space-around"
       >
-        <Typography>Let's game start!</Typography>
         <Home />
+        <Typography variant='h3' sx={{ paddingRight: '10%' }}>QR CODE DO ELISSINHO</Typography>
       </Grid>
     </>
   );
