@@ -1,6 +1,6 @@
 import React from "react";
 import Home from '../components/Home';
-import { Grid, Typography } from "@mui/material";
+import { Grid } from "@mui/material";
 import QrCode from '../components/QrCode';
 
 const HomePage: React.FC = () => {

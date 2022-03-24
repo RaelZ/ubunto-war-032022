@@ -1,1 +1,1 @@
-export { default as qrCode } from "./qrcode.jpg";
+export { default as qrCode } from "./qrcode.jpeg";
