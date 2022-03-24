@@ -1,9 +1,19 @@
-import React from 'react'
+import React, { useEffect, useState } from "react";
+import { conectAPI } from "../api/ConectAPI";
+import moment from "moment";
 
 export default function Home() {
+  const [url, setURL] = useState<any>("");
+  useEffect(() => {
+    (async function getAll() {
+      const {data}: any = await conectAPI.getAll();
+      console.log(data[0].url);
+      setURL(data[0].url);
+    })();
+  }, []);
   return (
     <div>
-      <img src='https://media1.giphy.com/media/0Wzkc9iirQ4ZI7JoaD/giphy.gif?cid=790b7611278234535d01794f7a5b45683ac35421dfe4b97b&rid=giphy.gif&ct=g'></img>
+      <img src={url} alt="Elisson"></img>
     </div>
-  )
+  );
 }

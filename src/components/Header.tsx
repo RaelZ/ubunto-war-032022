@@ -11,9 +11,9 @@ const Header: React.FC = () => {
       alignItems="center"
       display="flex"
       justifyContent="center"
-      height={70}
+      minHeight={70}
       bgcolor="red"
-      style={{ cursor: 'pointer' }}
+      style={{ cursor: 'pointer', backgroundImage: 'linear-gradient(360deg, white, red)' }}
     >
       <Typography>METAVERSO</Typography>
     </Grid>
