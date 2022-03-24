@@ -12,11 +12,10 @@ const Header: React.FC = () => {
       display="flex"
       justifyContent="left"
       minHeight={70}
-      bgcolor="red"
-      style={{ cursor: 'pointer', paddingLeft: '2em',backgroundImage: 'linear-gradient(360deg, white, red)' }}
+      style={{ cursor: 'pointer', paddingLeft: '2em'}}
     >
       <Box>
-        <Typography sx={{ fontSize:'24px', weight: '700' }}>METAVERSO</Typography>
+        <Typography sx={{ fontFamily: 'Poppies, sans-serif', fontSize:'24px', weight: '700' }}>METAVERSO</Typography>
       </Box>
     </Grid>
   );

@@ -1,5 +1,5 @@
 import React from "react";
-import { Grid, Typography } from "@mui/material";
+import { Box, Grid, Typography } from "@mui/material";
 
 const Footer: React.FC = () => {
   return (
@@ -8,9 +8,11 @@ const Footer: React.FC = () => {
       display="flex"
       justifyContent="center"
       minHeight={70}
-      style={{ backgroundImage: 'linear-gradient(180deg, white, red)' }}
+      style={{ backgroundColor: '#f0e1ce', padding: '2em' }}
     >
-      <Typography>METAVERSO</Typography>
+      <Box>
+        <Typography>WebSite criado a fim de insterações visuais com a realidade virtual</Typography>
+      </Box>
     </Grid>
   );
 };
